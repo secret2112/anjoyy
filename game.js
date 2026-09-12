@@ -53,20 +53,16 @@ function initMuseum() {
     ========================= */
 
     const photos = [
-        "img/museum1.png",
-        "img/museum2.png",
-        "img/museum3.png",
-        "img/museum4.png",
-        "img/museum5.png",
-        "img/museum6.png"
+        "museum1.png",
+        "museum2.png",
+        "museum3.png",
+        "museum4.png",
+        "museum5.png",
+        "museum6.png"
     ];
 
     let currentIndex = 0;
 
-
-    /* =========================
-       ELEMENTS
-    ========================= */
 
     const leftFrame = document.querySelector(".museum-left");
     const mainFrame = document.querySelector(".museum-main");
@@ -82,10 +78,6 @@ function initMuseum() {
     const counter = document.getElementById("museumCurrent");
 
 
-    /* =========================
-       RENDER PHOTOS
-    ========================= */
-
     function renderMuseum() {
 
         const total = photos.length;
@@ -97,30 +89,19 @@ function initMuseum() {
             (currentIndex + 1) % total;
 
 
-        /* LEFT */
 
         leftImage.src = photos[leftIndex];
 
 
-        /* MAIN */
-
         mainImage.src = photos[currentIndex];
 
-
-        /* RIGHT */
 
         rightImage.src = photos[rightIndex];
 
 
-        /* COUNTER */
-
         counter.textContent = currentIndex + 1;
     }
 
-
-    /* =========================
-       NEXT
-    ========================= */
 
     nextBtn.addEventListener("click", () => {
 
@@ -135,10 +116,6 @@ function initMuseum() {
     });
 
 
-    /* =========================
-       PREVIOUS
-    ========================= */
-
     prevBtn.addEventListener("click", () => {
 
         currentIndex--;
@@ -151,10 +128,6 @@ function initMuseum() {
 
     });
 
-
-    /* =========================
-       MUSIC PLAYER
-    ========================= */
 
     const audio = document.getElementById("museumAudio");
 
@@ -253,10 +226,6 @@ function shrinkNoButton() {
 }
 
 
-// ======================
-// HANDLE NO
-// ======================
-
 function handleNoClick(){
 
     noClick++;
@@ -269,10 +238,6 @@ function handleNoClick(){
 
 }
 
-
-// ======================
-// SUCCESS
-// ======================
 
 function showSuccess(){
 
@@ -302,10 +267,6 @@ function showSuccess(){
 }
 
 
-// ======================
-// OPEN GIFT
-// ======================
-
 function openGift(number){
 
     showPage(giftPage);
@@ -330,7 +291,7 @@ function openGift(number){
         preload="metadata">
 
         <source
-            src="img/ily.mp3"
+            src="ily.mp3"
             type="audio/mpeg">
 
     </audio>
@@ -369,7 +330,7 @@ function openGift(number){
                     <div class="museum-frame museum-left">
 
                         <img
-                            src="img/museum6.png"
+                            src="museum6.png"
                             alt="">
 
                     </div>
@@ -378,7 +339,7 @@ function openGift(number){
                     <div class="museum-frame museum-main">
 
                         <img
-                            src="img/museum1.png"
+                            src="museum1.png"
                             alt="">
 
                     </div>
@@ -387,7 +348,7 @@ function openGift(number){
                     <div class="museum-frame museum-right">
 
                         <img
-                            src="img/museum2.png"
+                            src="museum2.png"
                             alt="">
 
                     </div>
@@ -440,7 +401,7 @@ break;
             <div class="music-player">
 
                 <img 
-                    src="img/ttkndr.jpeg" 
+                    src="ttkndr.jpeg" 
                     alt="Titik Nadir"
                     class="music-cover"
                 >
@@ -451,7 +412,7 @@ break;
                 </div>
 
                 <audio id="musicAudio">
-                    <source src="img/titik nadir.mp3" type="audio/mpeg">
+                    <source src="titik nadir.mp3" type="audio/mpeg">
                 </audio>
 
                 <!-- PROGRESS BAR -->
@@ -495,7 +456,7 @@ break;
                 <div class="birthday-card-bark"></div>
 
                 <img
-                    src="img/spider.jpeg"
+                    src="spider.jpeg"
                     alt="Birthday Card"
                 >
 
@@ -554,10 +515,6 @@ function checkGift(){
 }
 
 
-// ======================
-// BACK
-// ======================
-
 function backToSuccess(){
 
     showSuccessPage();
@@ -603,7 +560,6 @@ noBtn.addEventListener("touchstart",()=>{
 
 });
 
-// Gift
 gift1.addEventListener("click",()=>{
 
     openGift(1);
@@ -622,14 +578,12 @@ gift3.addEventListener("click",()=>{
 
 });
 
-// Back
 backBtn.addEventListener("click",()=>{
 
     backToSuccess();
 
 });
 
-// Ending
 lastBtn.addEventListener("click",()=>{
 
     openEnding();
@@ -645,10 +599,6 @@ function initMusicPlayer(){
     const musicCurrentTime = document.getElementById("musicCurrentTime");
     const musicDuration = document.getElementById("musicDuration");
 
-
-    // =========================
-    // PLAY / PAUSE
-    // =========================
 
     musicPlayBtn.addEventListener("click", () => {
 
@@ -667,10 +617,6 @@ function initMusicPlayer(){
     });
 
 
-    // =========================
-    // LOAD DURASI LAGU
-    // =========================
-
     musicAudio.addEventListener("loadedmetadata", () => {
 
         musicProgress.max = musicAudio.duration;
@@ -680,10 +626,6 @@ function initMusicPlayer(){
 
     });
 
-
-    // =========================
-    // UPDATE PROGRESS BAR
-    // =========================
 
     musicAudio.addEventListener("timeupdate", () => {
 
@@ -695,20 +637,12 @@ function initMusicPlayer(){
     });
 
 
-    // =========================
-    // SEEK / SKIP LAGU
-    // =========================
-
     musicProgress.addEventListener("input", () => {
 
         musicAudio.currentTime = musicProgress.value;
 
     });
 
-
-    // =========================
-    // LAGU SELESAI
-    // =========================
 
     musicAudio.addEventListener("ended", () => {
 
@@ -718,10 +652,6 @@ function initMusicPlayer(){
 
     });
 
-
-    // =========================
-    // FORMAT WAKTU
-    // =========================
 
     function formatMusicTime(seconds){
 
