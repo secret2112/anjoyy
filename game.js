@@ -339,7 +339,7 @@ function openGift(number){
                     <div class="museum-frame museum-left">
 
                         <img
-                            src="museum6.png"
+                            src="museum16.png"
                             alt="">
 
                     </div>
@@ -474,25 +474,23 @@ break;
 
             <div class="birthday-card-details">
 
-                <h4 class="birthday-color1">
+                <h5 class="birthday-color1">
                     just a letter
-                </h4>
+                </h5>
 
-                <h4 class="birthday-color2">
+                <h5 class="birthday-color2">
                     for u
-                </h4>
-
-
-                <p>Pada akhirnya Ini hanyalah sebuah kisah yang amat panjang tentang cinta yang menyadarkan kita bahwa manusia adalah budak bagi yang dicintainya, hiduplah bertahun-tahun. lupakan tentang diriku Hiduplah dengan bebas</p>
+                </h5>
+                
+                <p>pada akhirnya Ini hanyalah sebuah kisah yang amat panjang tentang cinta yang menyadarkan kita bahwa manusia adalah budak bagi yang dicintainya, hiduplah bertahun-tahun. lupakan tentang diriku Hiduplah dengan bebas</p>
 
                 <p>Kepadamu, 2000 tahun mulai sekarang, Darimu, 2000 tahun yang lalu</p>
 
-                <p>WKWKWKWK bercandaa kaa pemanis aja ituu, ya sebenarnya aku mau bilang kalauu ya emang si banyakk bangett orang yang bilang feb sama ft tuu kayaa minyak dan air yang gabisa disatukan, udaa kaya rule lah ituu katanyaa</p>
+                <p>WKWKWK bercandaa kaa pemanis aja ituu, ya sebenarnya aku mau bilang kalauu emang banyakk bangett gasii orang yang bilang kalau feb sama ft tuu udah kaya minyak sama air yang gabisa disatukan, udaa kaya rule lah katanyaa tuu</p>
 
                 <p>dan kayanyaa aku mau jadi bocil bandel yang akan melanggar rule itu sii wkwkwk</p>
 
-                <p>So?</p>
-
+                <p>so? do u wanna break that rule with me? ANJOYYYYYY</p>
                 <p class="birthday-text-right">
                     -.......
                 </p>
