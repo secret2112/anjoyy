@@ -58,13 +58,13 @@ function initMuseum() {
         "museum3.png",
         "museum4.png",
         "museum5.png",
-        "museum6.png"
+        "museum6.png",
         "museum7.png",
         "museum8.png",
         "museum9.png",
         "museum10.png",
         "museum11.png",
-        "museum12.png"
+        "museum12.png",
         "museum13.png",
         "museum15.png",
         "museum16.png"
