@@ -385,7 +385,7 @@ function openGift(number){
                 /
 
                 <span>
-                    6
+                    15
                 </span>
 
             </div>
